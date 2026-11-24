@@ -1,4 +1,4 @@
-# ♻️ WasteVision: Sistem Deteksi Sampah Liar Berbasis YOLOv8
+# ♻️ WasteVision: Sistem Deteksi Sampah Berbasis YOLOv8
 
 WasteVision adalah aplikasi web *Computer Vision* untuk mendeteksi dan mengklasifikasikan
 sampah liar pada gambar menggunakan **YOLOv8** (Ultralytics) dengan antarmuka **Streamlit**.
