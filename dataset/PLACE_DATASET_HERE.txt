@@ -1,0 +1,36 @@
+==================================================================
+ PETUNJUK PENEMPATAN DATASET - WasteVision
+==================================================================
+
+LANGKAH 1 - Letakkan folder "merged_dataset" (dari dataset Kaggle)
+di dalam folder ini:
+
+dataset/
+├── merged_dataset/
+│   ├── images/  (train/, val/, test/)
+│   └── labels/  (train/, val/, test/)
+└── PLACE_DATASET_HERE.txt   (file ini)
+
+Sumber:
+https://www.kaggle.com/datasets/pravesh212006/garbage-detection-dataset
+
+LANGKAH 2 - Siapkan label 6 kelas (WAJIB, hanya sekali):
+
+    python utils/relabel_dataset.py
+
+Dataset asli berisi dua sumber yang semua labelnya berkelas 0, sehingga
+skrip ini membuat dataset baru dengan kelas dari nama file:
+
+    garb_*  cardboard/glass/metal/paper/plastic -> kelas masing-masing
+    garb_*  trash, dan semua litter_*           -> LITTER
+
+Hasilnya ada di dataset/wastevision_data/ (dataset asli tidak diubah).
+
+LANGKAH 3 - Training:
+
+    python train.py
+
+CATATAN
+- Folder dataset/ masuk .gitignore, jadi tidak ikut ter-upload
+  ke GitHub / Streamlit Cloud.
+==================================================================

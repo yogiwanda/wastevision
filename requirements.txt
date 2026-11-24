@@ -1,0 +1,12 @@
+# Gunakan PyTorch versi CPU agar ukuran install kecil (cocok untuk Streamlit Cloud)
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+streamlit>=1.40.0
+ultralytics>=8.3.0
+torch
+torchvision
+opencv-python-headless
+numpy
+pandas
+Pillow
+PyYAML

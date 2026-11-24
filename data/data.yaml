@@ -1,0 +1,13 @@
+path: ../dataset/wastevision_data
+train: images/train
+val: images/val
+test: images/test
+
+nc: 6
+names:
+  0: CARDBOARD
+  1: GLASS
+  2: METAL
+  3: PAPER
+  4: PLASTIC
+  5: LITTER
